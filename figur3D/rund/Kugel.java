@@ -1,4 +1,6 @@
-package figuren2D.figur3D;
+package figuren2D.figur3D.rund;
+
+import figuren2D.figur3D.Figur3D;
 
 public class Kugel extends Figur3D {
 

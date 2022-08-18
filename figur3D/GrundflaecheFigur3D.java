@@ -1,11 +1,11 @@
 package figuren2D.figur3D;
 
-import figuren2D.N_Eck;
+import figuren2D.Figur2D;
 
 public abstract class GrundflaecheFigur3D extends Figur3D {
 
     private double hoehe;
-    private N_Eck grundflaeche;
+    private Figur2D grundflaeche;
 
     public double getHoehe() {
         return hoehe;
@@ -15,11 +15,11 @@ public abstract class GrundflaecheFigur3D extends Figur3D {
         this.hoehe = hoehe;
     }
 
-    public N_Eck getGrundflaeche() {
+    protected Figur2D getGrundflaeche(){
         return grundflaeche;
     }
 
-    public void setGrundflaeche(N_Eck grundflaeche) {
+    public void setGrundflaeche(Figur2D grundflaeche) {
         this.grundflaeche = grundflaeche;
     }
 }

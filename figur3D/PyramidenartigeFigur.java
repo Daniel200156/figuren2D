@@ -7,13 +7,11 @@ public abstract class PyramidenartigeFigur extends GrundflaecheFigur3D {
 
     @Override
     public double volumen() {
-//        return (getGrundflaeche() * getHoehe())/3;
-        return 0;
+        return (getGrundflaeche().flaeche() * getHoehe())/3;
     }
 
     @Override
     public double flaeche() {
-//        return getGrundflaeche() + mantelflaeche();
-        return 0;
+        return getGrundflaeche().flaeche() + mantelflaeche();
     }
 }
