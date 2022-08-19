@@ -3,11 +3,10 @@ package figuren2D.figur3D.pyramiden;
 import figuren2D.Rechteck;
 import figuren2D.figur3D.PyramidenartigeFigur;
 
-public class VierseitigePyramide extends PyramidenartigeFigur {
+public class VierseitigePyramide<T extends Rechteck> extends PyramidenartigeFigur<T> {
 
-    @Override
-    protected Rechteck getGrundflaeche() {
-        return (Rechteck) super.getGrundflaeche();
+    public VierseitigePyramide(double hoehe, T grundflaeche) {
+        super(hoehe, grundflaeche);
     }
 
     @Override

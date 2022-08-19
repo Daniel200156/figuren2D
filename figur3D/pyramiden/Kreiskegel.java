@@ -1,13 +1,13 @@
 package figuren2D.figur3D.pyramiden;
 
+import figuren2D.Figur2D;
 import figuren2D.Kreis;
 import figuren2D.figur3D.PyramidenartigeFigur;
 
-public class Kreiskegel extends PyramidenartigeFigur {
+public class Kreiskegel<T extends Kreis> extends PyramidenartigeFigur<T> {
 
-    @Override
-    protected Kreis getGrundflaeche() {
-        return (Kreis) super.getGrundflaeche();
+    public Kreiskegel(double hoehe, T grundflaeche) {
+        super(hoehe, grundflaeche);
     }
 
     @Override

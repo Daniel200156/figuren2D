@@ -1,7 +1,7 @@
 package figuren2D;
 
 
-public class Dreieck extends Figur2D {
+public class  Dreieck extends Figur2D {
     private double seiteA;
     private double seiteB;
     private double seiteC;
@@ -22,7 +22,7 @@ public class Dreieck extends Figur2D {
 
     //Kopierkonstruktor
     public Dreieck(Dreieck original) {
-        //Konstruktor mit Wertübergabe wird genutzt
+        //Konstruktor mit Wertï¿½bergabe wird genutzt
         this(original.getSeiteA(), original.getSeiteB(), original.getSeiteC());
     }
 
@@ -35,7 +35,7 @@ public class Dreieck extends Figur2D {
         if (istKonstruierbar(seiteA, this.seiteB, this.seiteC))
             this.seiteA = seiteA;
         else
-            System.out.println("Seitenänderung nicht möglich");
+            System.out.println("Seitenï¿½nderung nicht mï¿½glich");
     }
 
     public double getSeiteB() {
@@ -47,7 +47,7 @@ public class Dreieck extends Figur2D {
         if (istKonstruierbar(this.seiteA, seiteB, this.seiteC))
             this.seiteB = seiteB;
         else
-            System.out.println("Seitenänderung nicht möglich");
+            System.out.println("Seitenï¿½nderung nicht mï¿½glich");
     }
 
     public double getSeiteC() {
@@ -59,7 +59,7 @@ public class Dreieck extends Figur2D {
         if (istKonstruierbar(this.seiteA, this.seiteB, seiteC))
             this.seiteC = seiteC;
         else
-            System.out.println("Seitenänderung nicht möglich");
+            System.out.println("Seitenï¿½nderung nicht mï¿½glich");
     }
 
     public double getHoehe() {

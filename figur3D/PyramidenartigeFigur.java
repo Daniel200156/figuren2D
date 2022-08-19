@@ -1,6 +1,12 @@
 package figuren2D.figur3D;
 
-public abstract class PyramidenartigeFigur extends GrundflaecheFigur3D {
+import figuren2D.Figur2D;
+
+public abstract class PyramidenartigeFigur<T extends Figur2D> extends GrundflaecheFigur3D<T> {
+
+    public PyramidenartigeFigur(double hoehe, T grundflaeche) {
+        super(hoehe, grundflaeche);
+    }
 
     public abstract double mantelflaeche();
     public abstract double seitenLaenge();

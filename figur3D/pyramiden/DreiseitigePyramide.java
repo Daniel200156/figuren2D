@@ -3,11 +3,10 @@ package figuren2D.figur3D.pyramiden;
 import figuren2D.Dreieck;
 import figuren2D.figur3D.PyramidenartigeFigur;
 
-public class DreiseitigePyramide extends PyramidenartigeFigur {
+public class DreiseitigePyramide<T extends Dreieck> extends PyramidenartigeFigur<T> {
 
-    @Override
-    protected Dreieck getGrundflaeche() {
-        return (Dreieck) super.getGrundflaeche();
+    public DreiseitigePyramide(double hoehe, T grundflaeche) {
+        super(hoehe, grundflaeche);
     }
 
     @Override
